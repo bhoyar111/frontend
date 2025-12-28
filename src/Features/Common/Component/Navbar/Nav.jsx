@@ -9,24 +9,9 @@ import "./Nav.css";
 
 const headingMap = {
   "/admin-dashboard": "Dashboard",
-  "/questionnaire": "Survey Question",
-  "/appointments": "Appointments",
   "/providers": "Providers",
   "/patients": "Patients",
-  "/content-management": "Content Management",
-  "/audio-library": "Audio Library",
-  "/video-library": "Video Library",
-  "/notification": "Notification",
-  "/feedback": "Feedback",
-  "/provider-dashboard": "Dashboard",
   "/my-patient": "Patients",
-  "/appointment": "Consultation",
-  "/communication": "Messages",
-  "/subscription": "Manage Subscription",
-  "/payment-history": "Payment History",
-  "/assignment-control":"Assignment Control",
-  "/surveydetails": "Survey View",
-  "/demographics": "Demoghraphic"
 };
 
 const Header = () => {
@@ -38,7 +23,10 @@ const Header = () => {
   const [dropdownWidth, setDropdownWidth] = useState(0);
 
   const logsData = useSelector((state) => state.logs.logs);
+  console.log(logsData, "hhh");
   const loggedInUser = useSelector((state) => state?.auth?.user?.userData);
+  const loggedInUsersss = useSelector((state) => state);
+  console.log(loggedInUsersss, "loggedInUsersss");
   const loggedInUserId = useSelector((state) => state?.auth?.user?.userData?._id);
   const loggedInUserRole = useSelector((state) => state?.auth?.user?.userData?.role);
 

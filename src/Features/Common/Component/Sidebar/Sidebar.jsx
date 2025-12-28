@@ -5,7 +5,6 @@ import {
   FaTachometerAlt,
   FaUsers,
   FaUserMd,
-  FaCalendarCheck,
 } from "react-icons/fa";
 import "./Sidebar.css";
 import { toggleSidebar } from "../../Shared/Slice/SidebarSlice";

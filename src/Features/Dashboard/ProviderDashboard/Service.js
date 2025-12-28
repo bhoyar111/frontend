@@ -5,9 +5,6 @@ const Service = {
   logOutLogs: (data) => {
     return axiosInstance.post(ApiUrlConstant.forgotPassewordService(), data);
   },
-  providerDashboardCountViews: () => {
-    return axiosInstance.get(ApiUrlConstant.providerCountDetails());
-  },
 };
 
 export default Service;

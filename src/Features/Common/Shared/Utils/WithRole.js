@@ -4,3 +4,5 @@ export const withRole = (role, routes) => {
       handle: { ...(route.handle || {}), roles: [role] }
     }));
   };
+
+  

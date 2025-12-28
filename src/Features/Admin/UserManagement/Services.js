@@ -20,11 +20,6 @@ const Service = {
       params: data
     });
   },
-  getProviderSlots: (data) => {
-    return axiosInstance.get(ApiUrlConstant.providerSlotListService(), {
-      params: data
-    });
-  },
   deleteProvider: (data) => {
     return axiosInstance.put(ApiUrlConstant.deleteProviderService(), data);
   },
@@ -38,11 +33,6 @@ const Service = {
   },
   getListState: (data) => {
     return axiosInstance.get(ApiUrlConstant.stateListService(), {
-      params: data
-    });
-  },
-  getViewSurveyDetails: (data) => {
-     return axiosInstance.get(ApiUrlConstant.getSurveyDetailsService(), {
       params: data
     });
   },

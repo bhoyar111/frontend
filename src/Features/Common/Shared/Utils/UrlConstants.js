@@ -3,8 +3,8 @@ import { apiUrl } from "../../../../Config/Environment";
 const ApiUrlConstant = {
   /* Auth */
   loginService: () => `${apiUrl}/auth/login`,
-  forgotPassewordService: () => `${apiUrl}/auth/forgot-password`,
   logoutService: () => `${apiUrl}/auth/logout`,
+  forgotPassewordService: () => `${apiUrl}/auth/forgot-password`,
   optSendService: () => `${apiUrl}/auth/sent-otp`,
   verifyOtpService: () => `${apiUrl}/auth/vertify-otp`,
   resetPasswordService: () => `${apiUrl}/auth/reset-password`,

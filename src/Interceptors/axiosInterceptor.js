@@ -25,7 +25,7 @@ axiosInstance.interceptors.request.use(
     const method = config.method?.toLowerCase();
 
      // Skip encryption for upload-documents endpoint
-    if (config.url?.includes("/common-service/common/upload-documents")) {
+    if (config.url?.includes("/view/upload-documents")) {
       config.skipEncryption = true;
     }
 

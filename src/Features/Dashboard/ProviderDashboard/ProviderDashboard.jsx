@@ -1,31 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
-import Service from "./Service";
 import "./ProviderDashboard.css";
 
 const ProviderDashboard = () => {
   const navigate = useNavigate();
-
-  const [dashboardData, setDashboardData] = useState(null);
-
-  const [loading, setLoading] = useState(true);
-
-  const getDashboardCount = async () => {
-    try {
-      const res = await Service.providerDashboardCountViews();
-      if (res.status === 200) {
-        setDashboardData(res?.data);
-      }
-    } catch (err) {
-      console.error("Error fetching provider dashboard details:", err);
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  useEffect(() => {
-    getDashboardCount();
-  }, []);
 
   const patientClick = () => {
     navigate("/my-patient");
@@ -34,24 +12,6 @@ const ProviderDashboard = () => {
   const consultationClick = () => {
     navigate("/appointment");
   };
-
-  if (loading) {
-    return (
-      <div className="dashboard">
-        <h2>Loading dashboard...</h2>
-      </div>
-    );
-  }
-
-  if (!dashboardData) {
-    return (
-      <div className="dashboard">
-        <h2>No Data Available</h2>
-      </div>
-    );
-  }
-
-  const { totalPatients, totalAppointments, appointmentStatus } = dashboardData;
 
   return (
     <div className="dashboard">
@@ -67,7 +27,7 @@ const ProviderDashboard = () => {
           <div className="dasdhboard-icon">🧑‍⚕️</div>
           <div className="card-content">
             <p className="dash-title">Patients</p>
-            <h2>{totalPatients}</h2>
+            <h2>20</h2>
           </div>
         </div>
 
@@ -77,15 +37,15 @@ const ProviderDashboard = () => {
           <div className="card-content">
             <p className="dash-title">Appointments</p>
 
-            <h3 className="dash-sub-title">Total: {totalAppointments}</h3>
+            <h3 className="dash-sub-title">Total: 20</h3>
             <h3 className="dash-sub-title">
-              Completed: {appointmentStatus?.COMPLETED}
+              Completed: 20
             </h3>
             <h3 className="dash-sub-title">
-              Cancelled: {appointmentStatus?.CANCELLED}
+              Cancelled: 20
             </h3>
             <h3 className="dash-sub-title">
-              Missed: {appointmentStatus?.MISSED}
+              Missed: 14
             </h3>
           </div>
         </div>

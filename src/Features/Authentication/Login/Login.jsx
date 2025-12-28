@@ -35,9 +35,9 @@ const Login = () => {
 
   const handleSubmit = async (data) => {
     let userRole;
-    if (heading !== "Admin Login Form") {
+    if (heading !== "Admin Login") {
       userRole = "Provider";
-    }else{
+    } else {
       userRole = 'Admin';
     }
     try {
@@ -107,7 +107,8 @@ const Login = () => {
       };
       const response = await Service.logInLogs(reqData);
       if (response?.status === 200) {
-        dispatch(loginLogs(response?.data));
+        // dispatch(loginLogs(response?.data));
+        localStorage.setItem("loginLogId", response.data._id);
       }
     } catch (err) {
       showToast("error", err?.response?.message);
