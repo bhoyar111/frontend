@@ -1,0 +1,142 @@
+.reusable-table-wrapper {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+  }
+  
+  .table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .search-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 300px;
+  }
+  
+  .search-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+  }
+  
+  .search-wrapper input {
+    padding-left: 30px;
+  }
+  
+  .top-buttons-wrapper button {
+    white-space: nowrap;
+  }
+  
+  .table-filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .table-container {
+    overflow-x: auto;
+  }
+  
+  .custom-table {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    border-collapse: collapse;
+    background: #fff;
+  }
+  
+  .custom-table th,
+  .custom-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .custom-table th {
+    background-color: #f1f3f5;
+    font-weight: 600;
+  }
+  
+  .pagination-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+  }
+  
+  /* Toggle switch styles */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 22px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    background-color: #ccc;
+    border-radius: 22px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #6832C4;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(18px);
+  }
+  
+  .action-btn {
+    border-color: #6832C4;
+    color: #6832C4;
+  }
+  
+  .action-btn:hover {
+    background-color: #5b2aaa;
+    border-color: #5b2aaa;
+    color:white
+  }
+  .custom-btn {
+    background-color: #6832C4;
+    border-color: #6832C4;
+    color: white;
+  }
+  
+  .custom-btn:hover {
+    background-color: #5b2aaa;
+    border-color: #5b2aaa;
+  }
+  .page-btn{
+    color: #6832C4;
+    background-color: #E7DFFF;
+  }

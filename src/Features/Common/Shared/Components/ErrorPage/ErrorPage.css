@@ -1,0 +1,22 @@
+.error-page {
+  text-align: center;
+  border: 5px solid #00424E;
+  box-shadow: #e7dfff 15px 15px;
+  /* text-shadow: rgb(243, 171, 171) 2px 2px; */
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #00424E;
+}
+.error-btn {
+  border-color: #00424E;
+  color: #00424E;
+}
+
+.error-btn:hover {
+  background-color: #5b2aaa;
+  border-color: #5b2aaa;
+  color: white;
+}

@@ -1,0 +1,59 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.subheading {
+  color: #6b7280;
+  margin-bottom: 10px;
+}
+
+.cards-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start; /* ✅ Align to left side */
+}
+
+/* Card styling */
+.stat-card {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  max-width: 320px; /* ✅ Prevent card from stretching */
+  width: 100%;
+}
+
+.dasdhboard-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #e0f2fe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.dash-title {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 5px;
+}
+
+.dash-sub-title {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+}

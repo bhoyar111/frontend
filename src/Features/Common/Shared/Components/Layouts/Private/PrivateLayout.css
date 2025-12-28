@@ -1,0 +1,65 @@
+.layout-container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 12px;
+  transition: all 0.3s ease;
+}
+
+/* Sidebar */
+.layout-sidebar {
+  background-color: white;
+  color: white;
+  height: 100vh;
+  overflow-y: auto;
+  transition: width 0.3s ease;
+}
+
+.sidebar-open .layout-sidebar {
+  width: 240px;
+}
+
+.sidebar-closed .layout-sidebar {
+  width: 70px;
+  /* collapsed width */
+}
+
+/* Main Section */
+.layout-main-section {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: #f3f4f6;
+  overflow: hidden;
+  transition: margin-left 0.3s ease;
+}
+
+/* Header */
+/* Toggle Button */
+.sidebar-toggle-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Content */
+.layout-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+  background-color: #d2d7d7;
+}
+
+/* Footer */
+.layout-footer {
+  background-color: #ffffff;
+  padding: 10px 20px;
+  border-top: 1px solid #e5e7eb;
+  text-align: center;
+}
+
+.back-button-class {
+  float: inline-end;
+}

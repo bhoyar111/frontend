@@ -1,0 +1,206 @@
+/* General Header Styles */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 24px;
+    background-color: #f7f9fc; /* Light background for the header */
+    border-bottom: 1px solid #e0e5ed; /* Subtle border */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04); /* Softer shadow */
+    position: relative;
+    z-index: 1000; /* Ensure header is above other content */
+  }
+  
+  .page-heading {
+    font-size: 1.6rem; /* Slightly larger for prominence */
+    font-weight: 700; /* Bolder */
+    color: #2c3e50; /* Darker, more professional text color */
+    margin: 0; /* Remove default margin */
+  }
+  
+  /* Actions Area */
+  .header-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Reduced gap for a tighter design */
+  }
+  
+  
+  /* Icons Wrapper (for consistent padding/border) */
+  .icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px; /* Slightly larger touch area */
+    height: 38px;
+    border-radius: 8px; /* More rounded corners */
+    background-color: #ffffff;
+    border: 1px solid #dcdfe6;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s ease-in-out; /* Smooth transition on hover */
+  }
+  
+  .icon-wrapper:hover {
+    background-color: #f0f2f5; /* Light hover effect */
+    border-color: #c4d0e0; /* Darker border on hover */
+  }
+  
+  .icon {
+    font-size: 1.15rem; /* Slightly larger icon size */
+    color: #6c757d; /* Muted icon color */
+  }
+  
+  .notif-badge {
+    position: absolute;
+    top: 5px; /* Adjusted position */
+    right: 5px; /* Adjusted position */
+    width: 9px; /* Slightly larger badge */
+    height: 9px;
+    background: #e74c3c; /* Brighter red */
+    border-radius: 50%;
+    border: 2px solid #f7f9fc; /* Border matches header background */
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1); /* Subtle shadow for definition */
+  }
+  
+  /* Profile */
+  .profile-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    position: relative;
+    background-color: #ffffff;
+    padding: 6px 12px;
+    border-radius: 8px;
+    border: 1px solid #535a60;
+    transition: all 0.2s ease-in-out;
+}
+  
+  .profile-wrapper:hover {
+    background-color: #d1e2f5; /* Darker blue on hover */
+    border-color: #92bce8;
+  }
+  
+  .profile-circle {
+    background-color: #00424E; /* A vibrant blue */
+    color: #fff;
+    width: 36px; /* Slightly larger circle */
+    height: 36px;
+    border-radius: 50%;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.95rem;
+    flex-shrink: 0; /* Prevent shrinking */
+  }
+  
+  .profile-name {
+    font-weight: 600; /* Bolder name */
+    color: #2c3e50; /* Darker text */
+    font-size: 1rem; /* Standard font size */
+    margin-right: 4px; /* Space before arrow */
+  }
+  
+  .dropdown-arrow {
+    font-size: 0.7rem; /* Smaller arrow */
+    color: #6c757d; /* Muted arrow color */
+    transition: transform 0.2s ease;
+  }
+  
+  .profile-wrapper.active .dropdown-arrow {
+    transform: rotate(180deg); /* Rotate arrow when dropdown is open */
+  }
+  
+  /* Dropdown */
+  .dropdown {
+    position: absolute;
+    top: calc(100% + 10px); /* Position below the profile wrapper */
+    right: 0;
+    min-width: 175px;  /* Increased width for better content display */
+    background: #ffffff;
+    border: 1px solid #e0e5ed;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* More prominent shadow */
+    z-index: 1001; /* Ensure dropdown is above everything */
+    overflow: visible; /* Important for border-radius on children */
+  }
+  
+  .dropdown-header {
+    padding: 16px; /* Increased padding */
+    border-bottom: 1px solid #e9edf2; /* Lighter border */
+    background-color: #f7f9fc; /* Light background for header */
+  }
+  
+  .dropdown-header strong {
+    display: block;
+    font-size: 1.05rem; /* Slightly larger font */
+    color: #2c3e50;
+    margin-bottom: 4px; /* Space below name */
+  }
+  
+  .dropdown-header .email {
+    font-size: 0.85rem;
+    color: #7f8c8d; /* Muted email color */
+  }
+  
+  .badge {
+    display: inline-block;
+    background-color: #dbe7f7; /* Light blue badge */
+    color: #2980b9; /* Darker blue text for badge */
+    font-size: 0.75rem; /* Slightly larger font for badge */
+    padding: 4px 8px; /* More padding */
+    border-radius: 4px;
+    margin-top: 8px; /* More space above badge */
+    font-weight: 600; /* Bolder badge text */
+  }
+  
+  .profile-dropdown-list {
+    list-style: none;
+    margin: 0;
+    padding: 8px 0; /* Padding for the entire menu list */
+  }
+  
+  .profile-dropdown-list li {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px; /* Increased padding for better click area */
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease; /* Smooth transitions */
+    font-size: 0.95rem;
+    color: #495057; /* Standard text color for menu items */
+  }
+  
+  .profile-dropdown-list li:hover {
+    background-color: #f0f2f5; /* Light background on hover */
+    color: #2c3e50; /* Darker text on hover */
+  }
+  
+  .dropdown-icon {
+    margin-right: 12px; /* Increased space between icon and text */
+    font-size: 1rem; /* Icon size */
+    color: #8c98a7; /* Muted icon color */
+  }
+  
+  .profile-dropdown-list .logout {
+    color: #e74c3c; /* Red for logout */
+    font-weight: 500;
+    border-top: 1px solid #e9edf2; /* Separator for logout */
+    margin-top: 8px; /* Space above separator */
+    padding-top: 12px; /* Padding above logout text */
+  }
+  
+  .profile-dropdown-list .logout .dropdown-icon {
+    color: #e74c3c; /* Red icon for logout */
+  }
+  
+  .profile-dropdown-list .logout:hover {
+    background-color: #ffe6e6; /* Very light red on hover for logout */
+    color: #c0392b; /* Darker red on hover */
+  }
+  
+  /* Optional: Add a class to profile-wrapper when dropdown is open */
+  .profile-wrapper.active .dropdown-arrow {
+    transform: rotate(180deg); /* Rotate arrow when dropdown is open */
+  }

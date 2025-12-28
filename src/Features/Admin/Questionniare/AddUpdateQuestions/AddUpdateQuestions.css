@@ -1,0 +1,135 @@
+.question-form {
+    padding: 24px;
+    border-radius: 12px;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    margin: auto;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .form-group {
+    flex: 1;
+    min-width: 240px;
+  }
+  
+  .full-width {
+    width: 100%;
+  }
+  
+  label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #333;
+  }
+  
+  input,
+  select {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+    background-color: #fff;
+  }
+  
+  input:focus,
+  select:focus {
+    border-color: #00424E;
+    outline: none;
+  }
+  
+  .required {
+    color: red;
+    margin-left: 4px;
+  }
+  
+  .error {
+    color: red;
+    font-size: 12px;
+    margin-top: 4px;
+    display: block;
+  }
+  
+  .options-section {
+    margin-top: 12px;
+  }
+  
+  .option-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    max-width: 700px;
+  }
+  
+  .option-row input {
+    flex: 1;
+  }
+  
+  .add-btn,
+  .remove-btn {
+    width: 36px;
+    height: 36px;
+    font-size: 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .add-btn {
+    background-color: #00424E;
+    color: white;
+  }
+  
+  .remove-btn {
+    background-color: #ffe5e5;
+    color: red;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 24px;
+  }
+  
+  .cancel-btn,
+  .save-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+  }
+  
+  .cancel-btn {
+    border: 1px solid #00424E;
+    background: white;
+    color: #00424E;
+  }
+  
+  .cancel-btn:hover {
+    background-color: #f0f4ff;
+  }
+  
+  .save-btn {
+    background: #00424E;
+    color: white;
+    border: none;
+  }
+  
+  .save-btn:hover {
+    background-color: #00424E;
+  }
+  
