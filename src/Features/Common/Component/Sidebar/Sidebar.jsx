@@ -44,7 +44,6 @@ const Sidebar = () => {
   const providerMenu = [
     { id: "provider-dashboard", label: "Dashboard", icon: <FaTachometerAlt /> },
     { id: "my-patient", label: "Patients", icon: <FaUsers /> },
-    { id: "availability", label: "My Availability", icon: <FaCalendarCheck /> }
   ];
 
   const menuItems = role === "Admin" ? adminMenu : providerMenu;

@@ -8,8 +8,8 @@ const Header = () => {
   const location = useLocation();
 
   const headingMap = {
-    "/": "Physician Login Form",
-    "/admin-login": "Admin Login Form"
+    "/": "Physician Login",
+    "/admin-login": "Admin Login"
   };
   useEffect(() => {
     const path = location.pathname;
